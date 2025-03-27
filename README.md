@@ -17,4 +17,11 @@ The template repository already has pre-defined folders. Please restrict your pr
 - models: folder with model checkpoints
 
 Please modify this README to write your project documentation.
-# Week 2 Task
+
+## Week 2 Task
+Below is a list of steps to reproduce the task completed from week 2 of the application phase
+
+### Download the Ames Mutagenicity Dataset
+1. Open the [ames_mutagenicity.ipynb](notebooks/ames_mutagenicity.ipynb) Notebook and run each cell the to download the dataset
+
+2. 
