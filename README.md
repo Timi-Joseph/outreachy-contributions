@@ -8,6 +8,10 @@ Tools needed to complete this task
 - Python3 Installation on the host machine
 - Vscode enabled with Jupyter support or Google Colab or Jupyter notebook
 - Git
+- Create And Activate Python Virtual Environment
+  ```bash
+  python3 -m venv venv && source venv/bin/activate && pip install requirements.txt
+  ```
 
 ### Step 1
 Download the Dataset from [Therapeutics Data Commons](https://tdcommons.ai/single_pred_tasks/tox#ames-mutagenicity). The DILI (Drug Induced Liver Injury) Dataset
@@ -41,3 +45,10 @@ Download the Dataset from [Therapeutics Data Commons](https://tdcommons.ai/singl
 ### Step 2
 Featurise the data
 
+
+
+###
+- Install libmp
+  ```bash
+  brew install libomp
+  ```
