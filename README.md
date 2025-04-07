@@ -1,24 +1,5 @@
 # Outreachy contribution period
 
-<!--
-This repository contains a basic folder structure to be used during the Outreachy contribution period. Please make a fork to start contributing, and detail progress in the open issue. 
-
-## Project goals:
-- Understand how to use and interact with the Ersilia Model Hub
-- Demonstrate basic AI/ML knowledge
-- Show your Python coding skills 
-- Practice code documentation and end user documentation
-
-
-## Structure overview
-The template repository already has pre-defined folders. Please restrict your project to using them for easy review:
-- data: folder where data needs to be stored once downloade
-- notebooks: jupyter notebooks
-- scripts: python/bash scripts necessary to run the project
-- models: folder with model checkpoints
-
-Please modify this README to write your project documentation. -->
-
 ## Week 2/3 Task
 Below is a list of steps to reproduce the task completed from week 2 of the application phase
 
@@ -28,9 +9,10 @@ Tools needed to complete this task
 - Vscode enabled with Jupyter support or Google Colab or Jupyter notebook
 - Git
 
-1. Download the Ames Mutagenicity Dataset from [Therapeutics Data Commons](https://tdcommons.ai/single_pred_tasks/tox#ames-mutagenicity). The Ames Mutagenencity Datab
+### Step 1
+Download the Dataset from [Therapeutics Data Commons](https://tdcommons.ai/single_pred_tasks/tox#ames-mutagenicity). The DILI (Drug Induced Liver Injury) Dataset
 
-- Open the [ames_mutagenicity.ipynb](notebooks/ames_mutagenicity.ipynb) Notebook and run each cell the to download the dataset
+- Open the [drug_induced_liver_injury.ipynb](notebooks/drug_induced_liver_injury.ipynb) Notebook and run each cell the to download the dataset
 
     1. The notebook install TDC library using
         ```bash
@@ -49,9 +31,13 @@ Tools needed to complete this task
 
     4. Save the Downloaded dataset to the project environment data directory
        ```python
-        split['train'].to_csv("../data/ames/ames_train.csv", index=False)
-        split['valid'].to_csv("../data/ames/ames_valid.csv", index=False)
-        split['test'].to_csv("../data/ames/ames_test.csv", index=False)
+        split['train'].to_csv("../data/dili/dili_train.csv", index=False)
+        split['valid'].to_csv("../data/dili/dili_valid.csv", index=False)
+        split['test'].to_csv("../data/dili/dili_test.csv", index=False)
        ```
     This saves the downloaded dataset in an Ames folder under the data directory at the root of the project.
+
+
+### Step 2
+Featurise the data
 
