@@ -1,9 +1,7 @@
 # Outreachy contribution period
 
-## Week 2/3 Task
-Below is a list of steps to reproduce the task completed from week 2 of the application phase
-
-Tools needed to complete this task
+## Installation
+Tools needed;
 
 - Python3 Installation on the host machine
 - Vscode enabled with Jupyter support or Google Colab or Jupyter notebook
@@ -12,8 +10,15 @@ Tools needed to complete this task
   ```bash
   python3 -m venv venv && source venv/bin/activate && pip install requirements.txt
   ```
+- Install libmp: Needed for Macos to run XGBoost package
+  ```bash
+  brew install libomp
+  ```
 
-### Step 1
+## Dataset Details
+Drug-induced liver injury (DILI) is fatal liver disease caused by drugs and it has been the single most frequent cause of safety-related drug marketing withdrawals for the past 50 years (e.g. iproniazid, ticrynafen, benoxaprofen). This dataset is aggregated from U.S. FDA’s National Center for Toxicological Research.
+
+### Download and Save Dataset
 Download the Dataset from [Therapeutics Data Commons](https://tdcommons.ai/single_pred_tasks/tox#ames-mutagenicity). The DILI (Drug Induced Liver Injury) Dataset
 
 - Open the [drug_induced_liver_injury.ipynb](notebooks/drug_induced_liver_injury.ipynb) Notebook and run each cell the to download the dataset
@@ -25,7 +30,7 @@ Download the Dataset from [Therapeutics Data Commons](https://tdcommons.ai/singl
     2. Load the AMES Dataset with the library
        ```python
        from tdc.single_pred import Tox
-       data = Tox(name = 'AMES')
+       data = Tox(name = 'Dili')
        ```
     3. Split the dataset into Train, Validation and Test sets
         ```python
@@ -42,13 +47,8 @@ Download the Dataset from [Therapeutics Data Commons](https://tdcommons.ai/singl
     This saves the downloaded dataset in an Ames folder under the data directory at the root of the project.
 
 
+## How to Run the Code
+
+
 ### Step 2
-Featurise the data
 
-
-
-###
-- Install libmp
-  ```bash
-  brew install libomp
-  ```

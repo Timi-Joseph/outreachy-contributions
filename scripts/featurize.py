@@ -22,7 +22,7 @@ dili_labels = [
 print(f"Length of {DATASET_NAME} Smiles = {len(dili_smiles)}")
 
 
-model = ErsiliaModel("eos2db3")
+model = ErsiliaModel("eos9gg2")
 model.serve()
 
 print("Model Served Successfully ✅")
